@@ -72,9 +72,12 @@ function footer () {
           </div>
           <div className='h-5'></div>
           <h4 className="font-semibold text-3xl md:text-4xl mb-2">การประกวดปีที่ผ่านมา</h4>
-          <ul className='text-[22px] md:text-[26px] leading-none'>
+          <ul className='text-[22px] md:text-[26px] flex gap-2'>
             <li>
-              <a className='underline' href="https://assetwise.co.th/photocontest/2024/" target={'_blank'} rel='noreferrer'>2024</a>
+              <a className='underline md:no-underline md:hover:underline' href="https://assetwise.co.th/photocontest/2023/" target={'_blank'} rel='noreferrer'>2023, </a>
+            </li>
+            <li>
+              <a className='underline md:no-underline md:hover:underline' href="https://assetwise.co.th/photocontest/2024/" target={'_blank'} rel='noreferrer'>2024</a>
             </li>
           </ul>
         </div> 
