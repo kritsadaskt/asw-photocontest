@@ -9,14 +9,13 @@ function App() {
     <div className="App">
       <PageHeader/>
       <section id='pageBody' className='bg-[#f9f9f9]'>
-        <section className='intro-text py-10 bg-white border-y-[1px] border-y-stone-300'>
+        <section className='intro-text px-2 md:px-0 py-10 bg-white border-y-[1px] border-y-stone-300'>
           <div className="container mx-auto text-center">
-            <p className='text-[24px] leading-[26px]'><span className='font-semibold'>Assetwise</span> ร่วมกับ <span className='font-semibold'>สมาคมถ่ายภาพแห่งประเทศไทย ในพระบรมราชูปถัมภ์</span> <br className='hidden md:block' />จัดโครงการประกวดภาพถ่าย</p>
-            <h1 className='text-3xl font-semibold font-gotham mt-4'>“The 2024 ASSETWISE <span className='text-[#e8501d]'>PHOTO</span> CONTEST”</h1>
-            <h2 className='text-3xl font-semibold font-db mb-4'>ในหัวข้อ “Your Home-Town Happiness”<br/>ภาพถ่ายสะท้อนความสุขจากภูมิลำเนา</h2>
-            <p className='text-[18px] md:leading-5 lg:text-[24px] lg:leading-[26px]'>
-              ถ่ายทอดความคิดสร้างสรรค์ทางการถ่ายภาพและส่งต่อเรื่องราวแห่งความสุขที่บ้านเกิด<br className='hidden md:block'/>หรือ สถานที่ที่ประทับใจในทุกจังหวัดทั่วทุกภูมิภาคของประเทศไทย
-            </p>
+            <p className='text-[26px] leading-[28px]'><span className='font-semibold'>Assetwise</span> ร่วมกับ <span className='font-semibold'>สมาคมถ่ายภาพแห่งประเทศไทย ในพระบรมราชูปถัมภ์</span><br/>จัดโครงการประกวดภาพถ่าย</p>
+            <h3 className='text-5xl font-semibold mt-4 mb-1'>“THE 2025 ASSETWISE <span className='text-[#105596]'>PHOTO</span> CONTEST”</h3>
+            <p className='text-[24px]'>ในหัวข้อ "Forwarding Happiness"</p>
+            <div className='h-7'></div>
+            <p className='text-[24px] leading-[26px]'><strong className='text-[26px]'>AssetWise ฉลองครอบรอบ 20 ปี</strong> <br/>ในฐานะผู้สร้าง "บ้าน" ตามแนวคิด We Build Happiness เพราะรากฐานของบ้านที่อบอุ่น <br/>เป็นสารตั้งต้นทำให้เราส่งต่อความสุขนั้นให้ผู้อื่นได้ไม่รู้จบ</p>
           </div>
         </section>
         <BodyTabs/>
