@@ -1,6 +1,6 @@
-import DBanner from './img/07062023_ASW_PhotoContest_Desktop-2730x1380-.jpeg';
-import TBanner from './img/07062023_ASW_PhotoContest_Desktop-2730x1380-.jpeg';
-import MBanner from './img/07062023_ASW_PhotoContest_Mobile-.jpeg';
+import DBanner from './img/ASW-PHOTOCONTEST-DESKTOP_2024.jpg';
+import TBanner from './img/ASW-PHOTOCONTEST-DESKTOP_2024.jpg';
+import MBanner from './img/ASW-PHOTOCONTEST-MOBILE_2024.jpg';
 //import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function header () {
@@ -18,7 +18,7 @@ function header () {
       <picture>
         <source media='(max-width: 520px)' srcSet={MBanner}/>
         <source media='(max-width: 820px)' srcSet={TBanner}/>
-        <img src={DBanner} alt="AssetWise Photos Contest Exhibition 2023" className='w-full mx-auto lg:w-auto xl:w-[1520px]'/>
+        <img src={DBanner} alt="AssetWise Photos Contest Exhibition 2024" className='w-full mx-auto lg:w-auto xl:w-[1520px]'/>
       </picture>
     </header>
   );
