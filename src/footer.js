@@ -55,17 +55,23 @@ function footer () {
           </div>
         </div>
         <div className='mt-4 md:mt-0'>
-          <h4 className="font-semibold text-3xl md:text-4xl mb-4">สนับสนุนโดย</h4>
-          <div className="footer-sponsors-logo flex items-center mb-5">
-            <a title='assetwise.co.th' href="https://assetwise.co.th" target={'_blank'} rel='noreferrer' className="footer-sponsor-link w-1/6 mr-6">
-              <img src={require('./img/asw-logo-sq.png')} alt='AssetWise'/>
-            </a>
-            <a title='rpst.or.th' href="http://www.rpst.or.th/" target={'_blank'} rel='noreferrer' className="footer-sponsor-link w-1/4 mr-6">
-            <img src={require('./img/rpst-logo.png')} alt='RPST'/>
-            </a>
-            {/* <a title='bangkokartcity.org' href="https://www.bangkokartcity.org/" target={'_blank'} rel='noreferrer' className="footer-sponsor-link w-1/4">
-              <img src={require('./img/colorful-bkk-logo.png')} alt='Colorful Bangkok 2023'/>
-            </a> */}
+          <div>
+            <h4 className="font-semibold text-3xl md:text-4xl mb-4">สนับสนุนโดย</h4>
+            <div className="footer-sponsors-logo flex items-center mb-5">
+              <a title='assetwise.co.th' href="https://assetwise.co.th" target={'_blank'} rel='noreferrer' className="footer-sponsor-link w-1/6 mr-6">
+                <img src={require('./img/asw-logo-sq.png')} alt='AssetWise'/>
+              </a>
+              <a title='rpst.or.th' href="http://www.rpst.or.th/" target={'_blank'} rel='noreferrer' className="footer-sponsor-link w-1/4 mr-6">
+              <img src={require('./img/rpst-logo.png')} alt='RPST'/>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 className="font-semibold text-3xl mb-2">ผลการประกวดปีอื่น ๆ</h4>
+            <div className="flex text-2xl gap-2">
+              <a className='underline md:no-underline md:hover:underline' href="https://assetwise.co.th/photocontest/2023/" target={'_blank'} rel='noreferrer'>2023,</a>
+              <a className='underline md:no-underline md:hover:underline' href="https://assetwise.co.th/photocontest/" target={'_blank'} rel='noreferrer'>2025</a>
+            </div>
           </div>
         </div> 
       </div>
