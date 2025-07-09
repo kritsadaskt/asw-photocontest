@@ -1,8 +1,8 @@
 {
   "name": "asw-photos-contest",
-  "version": "0.2.0",
+  "version": "3.0.0",
   "private": true,
-  "homepage": "/photocontest/2023",
+  "homepage": "/photocontest",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",

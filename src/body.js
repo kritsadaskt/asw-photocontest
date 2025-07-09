@@ -31,11 +31,10 @@ function BodyTabs () {
   return (
     <Tab.Group defaultIndex={0}>
       <div className="container mx-auto">
-      <Tab.List className='justify-center text-md md:text-2xl lg:text-4xl font-semibold leading-none grid grid-cols-2 py-[15px]'>
+      <Tab.List className='justify-center text-md md:text-2xl font-semibold leading-none grid grid-cols-2 py-[15px]'>
         { itemsGroup.map((item, i)=> (
-          <Tab key={i} className='uppercase whitespace-pre-line text-[#6d6e71] hover:text-[#333] ui-selected:text-[#333] xl:px-[20%] xl:py-[20px] font-gotham first:border-r-4 border-[#58595b] focus-visible:outline-0 cursor-pointer'>
+          <Tab key={i} className='uppercase whitespace-pre-line text-[#6d6e71] hover:text-[#333] ui-selected:text-[#333] xl:px-[20%] xl:py-[20px] font-DBHeavent text-[24px] md:text-[36px] leading-none first:border-r-4 border-[#58595b] focus-visible:outline-0 cursor-pointer'>
             {item.contestLabel}
-            <p className='font-DBHeavent font-normal leading-[0.8] md:leading-tight text-[14px] md:text-[20px] mt-1 md:mt-0 md:text-2xl'>หมวด {item.contestDesc}</p>
           </Tab>
         ))}
       </Tab.List>
@@ -43,20 +42,19 @@ function BodyTabs () {
       <Tab.Panels className='bg-white'>
         { itemsGroup.map((contestGroup, i) => (
           <Tab.Panel key={i}>
-            <Transition show enter="transition-opacity duration-500" className="winnerBox bg-[#dce5e7]">
+            <Transition show enter="transition-opacity duration-500" className="winnerBox bg-[#fff4d4]">
               <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-5 xl:grid-cols-5 gap-0 md:gap-3 lg:gap-2 xl:gap-4">
-                  <div className="details col-span-2 px-3 xl:px-0 pt-5 xl:pt-10">
-                    <h2 className='text-[3rem] xl:text-[5rem] leading-[.75] font-bold text-[#e8501d] pb-4 lg:pb-6'>รางวัลชนะเลิศ</h2>
+                  <div className="details col-span-2 px-4 2xl:px-0 pt-5 xl:pt-10">
+                    <h2 className='text-[3rem] xl:text-[5rem] leading-[.75] font-bold text-[#105596] pb-4 lg:pb-6'>รางวัลชนะเลิศ</h2>
                     <h3 className='text-[2rem] xl:text-[2.6rem] leading-[.75] font-semibold pb-4 lg:pb-6'>เงินสด 100,000 บาท<br/>พร้อมถ้วยรางวัลเกียรติยศ</h3>
-                    <h3 className='text-4xl md:text-[2rem] leading-[.9] pr-8 whitespace-pre-line uppercase font-gotham'>{contestGroup.contestName}</h3>
-                    <p className='text-xl md:text-2xl mb-3 lg:mb-5'>{contestGroup.contestDesc}</p>
+                    <h3 className='text-4xl md:text-[3rem] mb-5 font-medium leading-[.9] pr-8 whitespace-pre-line uppercase'>{contestGroup.contestLabel}</h3>
                     <p className='text-xl lg:text-2xl lg:leading-[.8]'><span className='font-semibold inline-block w-auto lg:w-[85px]'>ศิลปิน</span> {contestGroup.winner.prefix+' '+contestGroup.winner.name+' '+contestGroup.winner.lastname}</p>
                     <p className='text-xl lg:text-2xl'><span className='font-semibold inline-block w-auto lg:w-[85px]'>ชื่อภาพ</span> {contestGroup.winner.imageName}</p>
                     <p className='text-xl lg:text-2xl leading-tight lg:leading-[.9] mb-5'><span className='font-semibold'>คำบรรยาย</span> {contestGroup.winner.imageDesc}</p>
                   </div>
                   <div className="image-thumb md:col-span-3 xl:col-span-3">
-                    <LazyLoadImage alt={contestGroup.winner.imageName + ' โดย ' + contestGroup.winner.prefix+contestGroup.winner.name+' '+contestGroup.winner.lastname} src={'https://assetwise.co.th/photocontest/'+ contestGroup.key +'/awards/'+ contestGroup.winner.url+'.jpg'} />
+                    <LazyLoadImage alt={contestGroup.winner.imageName + ' โดย ' + contestGroup.winner.prefix+contestGroup.winner.name+' '+contestGroup.winner.lastname} src={contestGroup.path +'/'+ contestGroup.winner.url+'.jpg'} />
                   </div>
                 </div>
               </div>
@@ -75,8 +73,8 @@ function BodyTabs () {
                 </div>
               </div> : null
             }
-            <div className="container mx-auto py-2 px-3 md:py-10 xl:px-0 xl:py-16">
-              <p className='font-semibold text-[2rem] leading-4 lg:text-[2.5rem]'>รางวัลยอดเยี่ยม จำนวน 10 รางวัล</p>
+            <div className="container mx-auto pt-10 pb-2 px-3 md:py-10 2xl:px-0 xl:py-16">
+              <p className='font-semibold text-[2rem] leading-4 lg:text-[2.5rem]'>รางวัลดีเด่น จำนวน 10 รางวัล</p>
               <hr className='border border-black mt-4 mb-3'/>
               <div className="awards-listed pb-5">
                 <p className='text-xl lg:text-2xl mb-4'>ภายใต้หัวข้อ {contestGroup.contestDesc}</p>
@@ -84,20 +82,7 @@ function BodyTabs () {
                 <ResponsiveMasonry >
                   <Masonry gutter='10px'>
                   {contestGroup.awards.map((item,i) => (
-                    <LazyLoadImage alt={item.imageName + ' โดย ' + item.prefix+item.name+' '+item.lastname} key={i} className={'cursor-pointer hover:opacity-80 transition-all'} src={ contestGroup.path + '/awards/thumbs/' + item.url +'.jpg' } onClick={ () => slideClickHandle(item, i, contestGroup.path + '/awards/' + item.url +'.jpg')} />
-                  ))}
-                  </Masonry>
-                </ResponsiveMasonry>
-              </div>
-
-              <div className="awards-listed pt-10 pb-5">
-                <p className='font-semibold text-[2rem] leading-4 lg:text-[2.5rem]'>ภาพที่ผ่านเข้ารอบ</p>
-                <hr className='border border-black mt-4 mb-5'/>
-                <p className='text-xl lg:text-2xl mb-4'>ภายใต้หัวข้อ {contestGroup.contestDesc}</p>
-                <ResponsiveMasonry >
-                  <Masonry gutter='10px'>
-                  {contestGroup.participant.map((item,i) => (
-                    <LazyLoadImage alt={item.imageName + ' โดย ' + item.prefix+item.name+' '+item.lastname} key={i} className={'cursor-pointer hover:opacity-80 transition-all'} src={ contestGroup.path + '/participant/thumbs/' + item.url +'.jpg' } onClick={ () => slideClickHandle(item, i, contestGroup.path + '/participant/' + item.url +'.jpg')} />
+                    <LazyLoadImage alt={item.imageName + ' โดย ' + item.prefix+item.name+' '+item.lastname} key={i} className={'cursor-pointer hover:opacity-80 transition-all'} src={ contestGroup.path +'/'+ item.url +'.jpg' } onClick={ () => slideClickHandle(item, i, contestGroup.path +'/'+ item.url +'.jpg')} />
                   ))}
                   </Masonry>
                 </ResponsiveMasonry>
