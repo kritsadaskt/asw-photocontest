@@ -77,14 +77,17 @@ function footer () {
               <a className='underline md:no-underline md:hover:underline' href="https://assetwise.co.th/photocontest/2023/" target={'_blank'} rel='noreferrer'>2023, </a>
             </li>
             <li>
-              <a className='underline md:no-underline md:hover:underline' href="https://assetwise.co.th/photocontest/2024/" target={'_blank'} rel='noreferrer'>2024</a>
+              <a className='underline md:no-underline md:hover:underline' href="https://assetwise.co.th/photocontest/2024/" target={'_blank'} rel='noreferrer'>2024, </a>
+            </li>
+            <li>
+              <a className='underline md:no-underline md:hover:underline' href="https://assetwise.co.th/photocontest/2025/" target={'_blank'} rel='noreferrer'>2025, </a>
             </li>
           </ul>
         </div> 
       </div>
       <div className="copyright pt-2 pb-2 mt-4 px-3 2xl:px-0">
         <div className="container mx-auto grid md:grid-cols-2">
-          <div className="copyright-txt text-center sm:text-left text-[#105596]">© Copyright ASSETWISE PHOTO CONTEST 2025. All Rights Reserved.</div>
+          <div className="copyright-txt text-center sm:text-left text-[#105596]">© Copyright ASSETWISE PHOTO CONTEST 2026. All Rights Reserved.</div>
           <div className="socialIcons flex space-x-2 justify-center items-center sm:justify-end py-3 md:py-0">
             <a href="https://www.facebook.com/AssetWiseThailand" title="AssetWise Facebook" className="social-link">
               <svg className="h-5 fill-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>

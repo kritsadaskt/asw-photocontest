@@ -16,6 +16,11 @@ module.exports = {
         'span-2': 'span 2 / span 2',
       }
     },
+    extend: {
+      colors: {
+        'primary': '#f76200',
+      }
+    }
   },
   plugins: [
     require('@headlessui/tailwindcss'),

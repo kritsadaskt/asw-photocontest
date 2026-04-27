@@ -1,6 +1,6 @@
-import DBanner from './img/desktop_banner.jpg';
-import TBanner from './img/desktop_banner.jpg';
-import MBanner from './img/mobile_banner.jpg';
+import DBanner from './img/desktop-banner.webp';
+import TBanner from './img/desktop-banner.webp';
+import MBanner from './img/mobile-banner.webp';
 //import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function header () {
