@@ -4,7 +4,7 @@
     "contestLabel": "Happyscape\nทิวทัศน์แห่งความสุข",
     "contestDesc": "Happyscape ทิวทัศน์แห่งความสุข",
     "key": "digital-camera",
-    "path": "/photocontest/2026/happyscape",
+    "path": "/2026/happyscape",
     "s3path": "happyscape",
     "winner": {
       "id": 1,
@@ -112,7 +112,7 @@
     "contestLabel": "A Joyful World\nโลกนี้น่าอยู่",
     "contestDesc": "A Joyful World โลกนี้น่าอยู่",
     "key": "smartphone-tablet-camera",
-    "path": "/photocontest/2026/joyful_world",
+    "path": "/2026/joyful_world",
     "s3path": "joyful_world",
     "winner": {
       "id": 1,
