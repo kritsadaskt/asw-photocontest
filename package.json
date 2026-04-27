@@ -2,7 +2,7 @@
   "name": "asw-photos-contest",
   "version": "3.0.0",
   "private": true,
-  "homepage": "/photocontest",
+  "homepage": ".",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
