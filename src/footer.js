@@ -11,34 +11,39 @@ const juries = [
   },
   {
     'name': 'คุณปณีตา มาลัยวงศ์',
-    'th-pos': 'รองประธานเจ้าหน้าที่บริหาร บริษัท แอสเซทไวส์ จำกัด (มหาชน)',
+    'th-pos': 'รองประธานเจ้าหน้าที่บริหารสายงานขายและการตลาด บริษัท แอสเซทไวส์ จำกัด (มหาชน)',
     'en-txt': 'Paneeta Malaiwong, Director, Deputy CEO-Sales & Marketing, AssetWise PCL.'
   },
   {
-    'name': 'คุณจุฬวิศว์ ศานติพงศ์',
+    'name': 'คุณณภัชป์ รัตนศักดิ์',
     'th-pos': 'อุปนายกสมาคมถ่ายภาพแห่งประเทศไทย ในพระบรมราชูปถัมภ์',
     'en-txt': 'Chulawit Santipong, Hon.F.RPST, Vice President of The Royal Photographic Society of Thailand'
   },
   {
     'name': 'คุณวรรณพงษ์ สุรโรจน์ประจักษ์',
-    'th-pos': 'กรรมการบริหารสมาคมถ่ายภาพแห่งประเทศไทย ในพระบรมราชูปถัมภ์',
+    'th-pos': 'เลขาธิการสมาคมถ่ายภาพแห่งประเทศไทย ในพระบรมราชูปถัมภ์',
     'en-txt': 'Wannapong A. Surarochprajak, Hon.F.RPST, Executive Board Committee of The Royal Photographic Society of Thailand'
   },
   {
-    'name': 'คุณอาระตี เบญจาธิกูล',
-    'th-pos': 'รองประธานสายงานอาวุโส ฝ่ายสื่อสารองค์กร, บริษัท แอสเซทไวส์ จำกัด (มหาชน)',
-    'en-txt': 'Aratee Benchadhikul, Senior Vice President, AssetWise Public Company Limited'
-  },
-  {
     'name': 'คุณมรุพงษ์ กิจกสิกร',
-    'th-pos': 'รองประธานสายงาน ฝ่ายลูกค้าสัมพันธ์, บริษัท แอสเซทไวส์ จำกัด (มหาชน)',
+    'th-pos': 'รองประธานสายงาน ฝ่ายลูกค้าสัมพันธ์ บริษัท แอสเซทไวส์ จำกัด (มหาชน)',
     'en-txt': 'Marupong Kitkasikorn, Deputy Vice President, AssetWise Public Company Limited'
   },
   {
-    'name': 'คุณเปรมฤดี เอี่ยมศรีใส',
-    'th-pos': 'ผู้จัดการฝ่ายสื่อสารองค์กร, บริษัท แอสเซทไวส์ จำกัด (มหาชน)',
-    'en-txt': 'Premrudee Iamsrisai, Marketing Communication Manager, AssetWise Public Company Limited'
+    'name': 'คุณกันต์นริศย์ บุณยหิรัญกุล',
+    'th-pos': 'ผู้จัดการฝ่ายสื่อสารองค์กร บริษัท แอสเซทไวส์ จำกัด (มหาชน)',
+    'en-txt': 'Kantanarit Bunyanhirakul, Corporate Communication & Marketing Division Manager, AssetWise Public Company Limited'
   },
+  {
+    'name': 'นพ.ธราธร ตุงคสมิต',
+    'th-pos': 'หัวหน้ากลุ่มงานพัฒนานโยบายและยุทธศาสตร์การแพทย์ สถาบันมะเร็งแห่งชาติ',
+    'en-txt': 'Kantanarit Bunyanhirakul, Corporate Communication & Marketing Division Manager, AssetWise Public Company Limited'
+  },
+  {
+    'name': 'คุณกันตพัฒน์ พฤฒิธรรมกูล',
+    'th-pos': 'เจ้าของเพจ "กอล์ฟมาเยือน"',
+    'en-txt': 'Kantanarit Bunyanhirakul, Corporate Communication & Marketing Division Manager, AssetWise Public Company Limited'
+  }
 ]
 
 function footer () {
@@ -54,7 +59,6 @@ function footer () {
                 <div className="line1 text-[20px] md:text-[24px] leading-tight">
                   <strong className="font-semibold block md:inline-block">{item.name}</strong> {item['th-pos']}
                 </div>
-                <div className="line2 text-[18px] md:text-[22px] leading-none">{item['en-txt']}</div>
               </li>
             ))}
             </ul>
