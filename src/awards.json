@@ -4,7 +4,7 @@
     "contestLabel": "ภาพถ่ายจาก\nกล้องดิจิตอลทั่วไป",
     "contestDesc": "ภาพถ่ายจากกล้องดิจิตอลทั่วไป",
     "key": "digital-camera",
-    "path": "https://assetwise.co.th/photocontest/2025/digital-cam",
+    "path": "digital-cam",
     "winner": {
       "id": 1,
       "url": "ASWPhotoContest2025_DigitalCam_winner",
@@ -120,7 +120,7 @@
     "contestLabel": "ภาพถ่ายจาก\nสมาร์ทโฟนหรือแท็บเล็ต",
     "contestDesc": "ภาพถ่ายจากสมาร์ทโฟนหรือแท็บเล็ต",
     "key": "smartphone-tablet-camera",
-    "path": "https://assetwise.co.th/photocontest/2025/smartphone",
+    "path": "smartphone/",
     "winner": {
       "id": 1,
       "url": "ASWPhotoContest2025_Smartphone_winner",
