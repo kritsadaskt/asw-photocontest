@@ -56,7 +56,7 @@ function BodyTabs () {
                     <p className='text-xl lg:text-2xl leading-tight lg:leading-[.9] mb-5'><span className='font-semibold'>คำบรรยาย</span> {contestGroup.winner.imageDesc}</p>
                   </div>
                   <div className="image-thumb md:col-span-3 xl:col-span-3">
-                    <LazyLoadImage alt={contestGroup.winner.imageName + ' โดย ' + contestGroup.winner.prefix+contestGroup.winner.name+' '+contestGroup.winner.lastname} src={'https://assetwise.co.th/photocontest/'+ contestGroup.key +'/awards/'+ contestGroup.winner.url+'.jpg'} />
+                    <LazyLoadImage alt={contestGroup.winner.imageName + ' โดย ' + contestGroup.winner.prefix+contestGroup.winner.name+' '+contestGroup.winner.lastname} src={'https://assetwise.co.th/photocontest/2023/'+ contestGroup.key +'/awards/'+ contestGroup.winner.url+'.jpg'} />
                   </div>
                 </div>
               </div>
